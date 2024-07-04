@@ -22,9 +22,9 @@ def welcome():
         f"Available Routes:<br/>"
         f"/api/v1.0/precipitation_sql<br/>"
         f"/api/v1.0/station_sql<br/>"
-        f"/api/v1.0/tobs_activestation/<station>"<br/>"
-        f"/api/v1.0/tobs_start/<start>"<br/>"
-        f"/api/v1.0/tobs_start_end/<start>/<end>"
+        f"/api/v1.0/tobs_activestation/USC00519281<br/>"
+        f"/api/v1.0/tobs_start/2016-08-23<br/>"
+        f"/api/v1.0/tobs_start_end/2016-08-23/2017-08-23"
     )
 
 # SQL Queries

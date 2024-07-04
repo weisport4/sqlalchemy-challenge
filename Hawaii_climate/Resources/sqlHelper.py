@@ -12,7 +12,7 @@ class SQLHelper():
     # Database Setup
     #################################################
 
-    # define properties (database)
+    # define properties (database path, engine, base)
     def __init__(self):
         self.engine = create_engine("sqlite:///hawaii.sqlite")
         self.Base = None
@@ -55,8 +55,8 @@ class SQLHelper():
 
         query = """
                 SELECT
-                    measurement.station
-                    name
+                    measurement.station,
+                    name,
                     count(*) as num_stations
                 FROM
                     measurement
